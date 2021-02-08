@@ -16,9 +16,7 @@ gem 'devise', '~> 4.7', '>= 4.7.3'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
-group :production do
-	gem 'pg', '~> 1.2', '>= 1.2.3'
-end
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -30,6 +28,10 @@ group :development do
   gem 'spring'
   gem 'sqlite3'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :production do
+	gem 'pg', '~> 1.2', '>= 1.2.3'
 end
 
 group :test do
